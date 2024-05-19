@@ -5,18 +5,17 @@
 # Description: U2 - Ultimate Object-Oriented Ruby Challenge
 
 class Grains 
-
   def self.square(num)
     return 2**(num - 1);
 
   end
 
   def self.total
-    return (2**64) - 1
+    total = 64
+    return (2**total) - 1
   end
 
 end
-
 
 # Display the number of grains on each square
 (1..64).each do |i|
@@ -24,4 +23,4 @@ end
 end
 
 # Display the total number of grains on the chessboard
-puts "Total grains on the chessboard: #{Grains.total}"
+puts "Total number of grains: #{Grains.total}"
