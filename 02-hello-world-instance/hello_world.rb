@@ -5,12 +5,11 @@
 # Description: U2 - Ultimate Object-Oriented Ruby Challenge
 
 class HelloWorld
-  def initialize(name1 = "Wally", name = "World")
-    @name = name
-    return "Hello, #{name}. My name is #{name1}!"
+  def initialize(my_name = "Wally")
+    @my_name = my_name
   end
 
-  def hello(name1="Wally")
-    return "Hello, #{@name}. My name is #{name1}!"
+  def hello(name = "World")
+    return "Hello, #{name}. My name is #{@my_name}!"
   end
 end
